@@ -2,6 +2,6 @@
 #define IBU_H
 
 class ibu {
-    
-}
+
+};
 #endif
