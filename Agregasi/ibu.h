@@ -8,7 +8,6 @@ public:
 
    ibu(string pNama) :nama(pNama) {
     cout <<"Ibu \""<< nama << "\"ada\n";
-
    }
    ~ibu(){
     cout << "ibu \" "<< nama <<"\" tidak ada\n";
@@ -16,4 +15,14 @@ public:
    void tambahAnak(*anak);
    void cetakAnak();
 };
+void ibu::tambahAnak(anak* pAnak) {
+    daftar_anak push_back(pAnak);
+}
+void ibu::cetakAnak(){
+    cout << "Daftar Anak dari Ibu \" "<< this->nama <<"\""
+    for (auto& a : daftar_anak){
+        cout << a->nama <<"\n";
+    }
+    
+}
 #endif
