@@ -8,9 +8,10 @@ public :
    jantung varJantung;
 
    manusia(string pName) : name(pName) {
-    cout << name << "Hiuup\n";
+    cout << name << "Hidup\n";
    }
     ~manusia() {
-            cout << name
+            cout << name << "mati\n";
        }
 };
+#endif 
